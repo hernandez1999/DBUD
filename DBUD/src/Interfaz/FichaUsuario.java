@@ -130,6 +130,11 @@ public class FichaUsuario extends javax.swing.JFrame {
                 limpiarMouseEntered(evt);
             }
         });
+        limpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limpiarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -280,6 +285,14 @@ public class FichaUsuario extends javax.swing.JFrame {
     private void limpiarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_limpiarMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_limpiarMouseEntered
+
+    private void limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarActionPerformed
+        
+        textoNombre.setText(null);
+        textoApellido.setText(null);
+        textoEdad.setText(null);  
+        textoCarrera.setText(null);
+    }//GEN-LAST:event_limpiarActionPerformed
 
     /**
      * @param args the command line arguments
